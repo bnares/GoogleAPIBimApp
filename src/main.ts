@@ -10,7 +10,7 @@ import help from "./components/Panels/Help";
 import camera from "./components/Toolbars/Sections/Camera";
 import measurement from "./components/Toolbars/Sections/Measurement";
 import selection from "./components/Toolbars/Sections/Selection";
-import { AppManager } from "./bim-components";
+import { AppManager, SlidesUI } from "./bim-components";
 
 BUI.Manager.init();
 
@@ -143,6 +143,11 @@ const toolbar = BUI.Component.create(() => {
       <bim-tab label="Measurement">
         <bim-toolbar>
             ${measurement(world, components)}
+        </bim-toolbar>      
+      </bim-tab>
+      <bim-tab label="Presentation">
+        <bim-toolbar>
+            ${SlidesUI(components, world)}
         </bim-toolbar>      
       </bim-tab>
     </bim-tabs>
