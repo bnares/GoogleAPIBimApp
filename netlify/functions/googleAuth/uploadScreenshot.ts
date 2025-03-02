@@ -1,5 +1,5 @@
 import {google} from "googleapis"
-import { auth } from "./googleAuth/auth"
+import { auth } from "./auth"
 //Use the Readable from stream to create a streamable object required by the API
 import { Readable } from "stream";
 
